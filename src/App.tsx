@@ -1,4 +1,5 @@
 import { ChakraProvider, ColorModeScript, Container } from "@chakra-ui/react";
+import { Analytics } from "@vercel/analytics/react";
 
 import { theme } from "./Assets/Styles/theme";
 import Home from "./Pages/Home";
@@ -22,6 +23,7 @@ const App = () => {
         <Skills />
         <Footer />
       </Container>
+      <Analytics />
     </ChakraProvider>
   );
 };
