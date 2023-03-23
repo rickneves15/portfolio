@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 
 import Wrapper from "../../Components/Wrapper";
 
+import ProfileImage from "./../../../public/profile.png";
+
 const Home = () => (
   <Flex justifyContent="center" alignItems="center">
     <Flex
@@ -21,7 +23,7 @@ const Home = () => (
             width="30vh"
             height="30vh"
             name="Richard Neves"
-            src="https://www.4devs.com.br/4devs_gerador_imagem.php?acao=gerar_imagem&txt_largura=2000&txt_altura=2000&extensao=png&fundo_r=0.06274509803921569&fundo_g=0.996078431372549&fundo_b=0.9568627450980393&texto_r=0&texto_g=0&texto_b=0&texto=Test%20image&tamanho_fonte=50"
+            src={ProfileImage}
           />
         </Box>
       </motion.div>
