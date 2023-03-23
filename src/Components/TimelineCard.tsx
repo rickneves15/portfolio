@@ -54,11 +54,19 @@ const TimelineCard = ({ id, title, date }: CardProps) => {
     >
       <Box>
         <VStack spacing={2} mb={3} textAlign="left">
-          <chakra.h1 fontSize="2xl" lineHeight={1.2} fontWeight="bold" w="100%">
+          <chakra.h1
+            fontSize="2xl"
+            lineHeight={1.2}
+            color="timeline-text"
+            fontWeight="bold"
+            w="100%"
+          >
             {title}
           </chakra.h1>
         </VStack>
-        <Text fontSize="sm">{date}</Text>
+        <Text fontSize="sm" color="timeline-text">
+          {date}
+        </Text>
       </Box>
     </HStack>
   );

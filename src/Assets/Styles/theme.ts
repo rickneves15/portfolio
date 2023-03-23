@@ -1,11 +1,10 @@
 import { extendTheme, type ThemeConfig } from "@chakra-ui/react";
 
 const config: ThemeConfig = {
-  initialColorMode: "light",
+  initialColorMode: "dark",
   useSystemColorMode: false,
 };
 
-// 3. extend the theme
 export const theme = extendTheme({
   config,
   styles: {
@@ -68,6 +67,10 @@ export const theme = extendTheme({
       "timeline-card": {
         _dark: "razzmatazz",
         _light: "deepSkyBlue",
+      },
+      "timeline-text": {
+        _dark: "white",
+        _light: "white",
       },
       "timeline-icon": {
         _dark: "white",
