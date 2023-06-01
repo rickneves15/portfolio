@@ -10,6 +10,11 @@ module.exports = withMT({
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: 'var(--font-inter)',
+        alt: 'var(--font-montserrat)',
+      },
+
       colors: {
         gray: {
           100: '#F0F0F0',

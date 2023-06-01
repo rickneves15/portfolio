@@ -1,8 +1,16 @@
 import './globals.css'
 import { Inter, Montserrat } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'], weight: ['200', '300'] })
-const montserrat = Montserrat({ subsets: ['latin'], weight: ['500'] })
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['200', '300'],
+  variable: '--font-inter',
+})
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['500'],
+  variable: '--font-montserrat',
+})
 
 export const metadata = {
   title: 'Richard Neves',
