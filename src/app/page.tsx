@@ -1,4 +1,4 @@
-import { Navbar } from '../Components/molecules/Navbar'
+import { Navbar } from '@/Components/organisms/Navbar'
 
 export default function Home() {
   return (
