@@ -1,10 +1,9 @@
-'use client'
-import { ThemeProvider } from '@material-tailwind/react'
+import { Navbar } from '../Components/molecules/Navbar'
 
 export default function Home() {
   return (
-    <ThemeProvider>
-      <div className="h-screen w-screen">Hello World</div>
-    </ThemeProvider>
+    <div className="h-screen w-screen px-40">
+      <Navbar />
+    </div>
   )
 }

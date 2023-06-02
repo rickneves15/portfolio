@@ -1,8 +1,16 @@
 import './globals.css'
 import { Inter, Montserrat } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'], weight: ['200', '300'] })
-const montserrat = Montserrat({ subsets: ['latin'], weight: ['500'] })
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['200', '300', '500'],
+  variable: '--font-inter',
+})
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['500'],
+  variable: '--font-montserrat',
+})
 
 export const metadata = {
   title: 'Richard Neves',
@@ -19,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="pt" className="dark">
       <body
-        className={`${inter.className} ${montserrat.className} bg-white font-sans text-gray-900 dark:bg-gray-900 dark:text-gray-100`}
+        className={`${inter.variable} ${montserrat.variable} bg-white font-sans text-gray-900 dark:bg-gray-900 dark:text-gray-100`}
       >
         {children}
       </body>
