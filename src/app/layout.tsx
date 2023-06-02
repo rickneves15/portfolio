@@ -1,15 +1,23 @@
 import './globals.css'
-import { Inter, Montserrat } from 'next/font/google'
+// eslint-disable-next-line camelcase
+import { Inter, Grape_Nuts, Montserrat } from 'next/font/google'
 
 const inter = Inter({
   subsets: ['latin'],
   weight: ['200', '300', '500'],
   variable: '--font-inter',
 })
+
 const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['500'],
   variable: '--font-montserrat',
+})
+
+const grapeNuts = Grape_Nuts({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-grape-nuts',
 })
 
 export const metadata = {
@@ -27,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="pt" className="dark">
       <body
-        className={`${inter.variable} ${montserrat.variable} bg-white font-sans text-gray-900 dark:bg-gray-900 dark:text-gray-100`}
+        className={`${inter.variable} ${montserrat.variable} ${grapeNuts.variable} bg-white font-sans text-gray-900 dark:bg-gray-900 dark:text-gray-100`}
       >
         {children}
       </body>

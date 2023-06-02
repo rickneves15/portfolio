@@ -14,6 +14,7 @@ module.exports = withMT({
       fontFamily: {
         sans: 'var(--font-inter)',
         alt: 'var(--font-montserrat)',
+        quote: 'var(--font-grape-nuts)',
       },
 
       colors: {
