@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link-navbar {
+    background: linear-gradient(
+      51.06deg,
+      #9358f7 0.87%,
+      #9259f7 7.31%,
+      #8e5df6 13.75%,
+      #8862f5 20.19%,
+      #806bf4 26.63%,
+      #7575f2 33.07%,
+      #6882f0 39.51%,
+      #5990ee 45.95%,
+      #4a9feb 52.39%,
+      #3bade9 58.84%,
+      #2ebae7 65.28%,
+      #23c4e5 71.72%,
+      #1bcde4 78.16%,
+      #15d2e3 84.6%,
+      #11d6e2 91.04%,
+      #10d7e2 97.48%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .title {
+    background: linear-gradient(
+      89.81deg,
+      #9845e8 -1.72%,
+      #33d2ff 54.05%,
+      #dd5789 99.78%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
